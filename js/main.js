@@ -1,10 +1,3 @@
-// preloader
-Royal_Preloader.config({
-    mode:           'number',
-    showProgress:   false,
-    background:     '#ffffff'
-});
-
 // image zoom
 $(document).ready(function() {
     $('.image-zoom-link').magnificPopup({
@@ -16,7 +9,7 @@ $(document).ready(function() {
 
 // gallery zoom
 $('.popup-gallery').each(function() {
-     $(this).magnificPopup({ 
+     $(this).magnificPopup({
         delegate: '.gallery-zoom',
         type:'image',
         gallery: {
@@ -185,7 +178,7 @@ $(document).ready(function(){
       if (percent>100) {
           percent=0;
           crsl.carousel('next');
-      }      
+      }
     }
     crsl.carousel({
         interval: false,
@@ -203,5 +196,5 @@ $(document).ready(function(){
 $('#fixed-navbar').affix({
     offset: {
         top: $('.top-bar').height()
-    }   
+    }
 });
