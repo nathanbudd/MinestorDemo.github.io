@@ -7,7 +7,8 @@
 
 # Site settings
 title: Reactn
-email: your-email@domain.com
+email: hello@reactn.com
+phone: +44 (0) 191 640 4631
 description: > # this means to ignore newlines until "baseurl:"
   Reactn is a powerful customer feedback platform revolutionising the way organisations collect, distribute and act on customer insight and opinion.
 baseurl: "" # the subpath of your site, e.g. /blog
