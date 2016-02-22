@@ -18,39 +18,39 @@
 
 
 	<!-- Revolution Slider CSS -->
-	<link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
-	<link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="/revolution/css/settings.css">
+	<link rel="stylesheet" type="text/css" href="/revolution/css/layers.css">
 
 	<!-- Revolution Slider Navigation CSS -->
-	<link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
+	<link rel="stylesheet" type="text/css" href="/revolution/css/navigation.css">
 
 	<!-- Stylesheets -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet" title="main-css">
-	<link href="css/bootstrap-social.css" rel="stylesheet">
-	<link href="css/animate.min.css" rel="stylesheet">
-	<link href="css/owl.carousel.css" rel="stylesheet" >
-	<link href="css/jquery.snippet.css" rel="stylesheet">
-	<link href="css/buttons.css" rel="stylesheet">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/style.css" rel="stylesheet" title="main-css">
+	<link href="/css/bootstrap-social.css" rel="stylesheet">
+	<link href="/css/animate.min.css" rel="stylesheet">
+	<link href="/css/owl.carousel.css" rel="stylesheet" >
+	<link href="/css/jquery.snippet.css" rel="stylesheet">
+	<link href="/css/buttons.css" rel="stylesheet">
 
 	<!-- Alternate Stylesheets / choose what color you want and include regularly AFTER style.css above -->
-	<link rel="alternate stylesheet" type="text/css" href="css/colors/blue.css" title="blue">
-	<link rel="alternate stylesheet" type="text/css" href="css/colors/green.css" title="green">
-	<link rel="alternate stylesheet" type="text/css" href="css/colors/purple.css" title="purple">
-	<link rel="alternate stylesheet" type="text/css" href="css/colors/dark-blue.css" title="dark-blue">
-	<link rel="alternate stylesheet" type="text/css" href="css/colors/red.css" title="red">
-	<link rel="alternate stylesheet" type="text/css" href="css/colors/silver.css" title="silver">
-	<link rel="alternate stylesheet" type="text/css" href="css/colors/pinkish.css" title="pinkish">
-	<link rel="alternate stylesheet" type="text/css" href="css/colors/seagul.css" title="seagul">
-	<link rel="alternate stylesheet" type="text/css" href="css/width-full.css" title="width-full">
-	<link rel="alternate stylesheet" type="text/css" href="css/width-boxed.css" title="width-boxed">
+	<link rel="alternate stylesheet" type="text/css" href="/css/colors/blue.css" title="blue">
+	<link rel="alternate stylesheet" type="text/css" href="/css/colors/green.css" title="green">
+	<link rel="alternate stylesheet" type="text/css" href="/css/colors/purple.css" title="purple">
+	<link rel="alternate stylesheet" type="text/css" href="/css/colors/dark-blue.css" title="dark-blue">
+	<link rel="alternate stylesheet" type="text/css" href="/css/colors/red.css" title="red">
+	<link rel="alternate stylesheet" type="text/css" href="/css/colors/silver.css" title="silver">
+	<link rel="alternate stylesheet" type="text/css" href="/css/colors/pinkish.css" title="pinkish">
+	<link rel="alternate stylesheet" type="text/css" href="/css/colors/seagul.css" title="seagul">
+	<link rel="alternate stylesheet" type="text/css" href="/css/width-full.css" title="width-full">
+	<link rel="alternate stylesheet" type="text/css" href="/css/width-boxed.css" title="width-boxed">
 
 	<!-- Icon Fonts -->
-	<link href='css/ionicons.min.css' rel='stylesheet' type='text/css'>
-	<link href='css/font-awesome.css' rel='stylesheet' type='text/css'>
+	<link href='/css/ionicons.min.css' rel='stylesheet' type='text/css'>
+	<link href='/css/font-awesome.css' rel='stylesheet' type='text/css'>
 
 	<!-- Magnific Popup -->
-	<link href='css/magnific-popup.css' rel='stylesheet' type='text/css'>
+	<link href='/css/magnific-popup.css' rel='stylesheet' type='text/css'>
 </head>
 <body class="royal_preloader scrollreveal">
 	<!-- Begin Boxed or Fullwidth Layout -->
@@ -60,6 +60,29 @@
 			<!-- Begin Header -->
 			<header>
 		     	{% include nav.html %}
+				{% if page.breadcrumbs %}
+					<div class="header">
+						<div class="container">
+							<div class="row">
+								<!-- Page Title -->
+								<div class="col-sm-6 col-xs-12">
+									<h1>{{ page.title }}</h1>
+								</div>
+
+								<!-- Breadcrumbs -->
+								<div class="col-sm-6">
+									<ol class="breadcrumb">
+										<li><span class="ion-home breadcrumb-home"></span><a href="/index.html">Home</a></li>
+										{% if page.section_title %}
+											<li><a href="index.html">{{ section_title }}</a></li>
+										{% endif %}
+										<li>{{ page.title }}</li>
+									</ol>
+								</div><!-- /column -->
+							</div><!-- /row -->
+						</div><!-- /container -->
+					</div><!-- /page header -->
+				{% endif %}
 			</header><!-- /header -->
 			<!-- End Header -->
 {{ content }}
@@ -111,33 +134,33 @@
 <!-- End Boxed or Fullwidth Layout -->
 
 <!-- Javascript Files -->
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.easing.min.js"></script>
-<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-<script type="text/javascript" src="js/scrollReveal.js"></script>
-<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-<script type="text/javascript" src="js/jquery.snippet.min.js"></script>
-<script type="text/javascript" src="js/jquery.fitvids.js"></script>
-<script type="text/javascript" src="js/style-switcher.js"></script><!-- Remove for production -->
-<script type="text/javascript" src="js/activate-snippet.js"></script>
-<script type="text/javascript" src="js/skrollr.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="/js/jquery.mixitup.min.js"></script>
+<script type="text/javascript" src="/js/scrollReveal.js"></script>
+<script type="text/javascript" src="/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="/js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="/js/jquery.snippet.min.js"></script>
+<script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/js/style-switcher.js"></script><!-- Remove for production -->
+<script type="text/javascript" src="/js/activate-snippet.js"></script>
+<script type="text/javascript" src="/js/skrollr.min.js"></script>
 
 <!-- Slider Revolution JS -->
-<script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="/revolution/js/jquery.themepunch.revolution.min.js"></script>
 
 <!-- Slider Revolution Extensions (Load Extensions only on Local File Systems The following part can be removed on Server for On Demand Loading) -->
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
 
 <!-- Slider Revolution Main -->
 <script type="text/javascript">
