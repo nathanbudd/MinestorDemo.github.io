@@ -76,3 +76,7 @@
     margin-top: 30px;
     max-width: 460px;
 }
+.link-list a
+{
+    color: black;
+}
