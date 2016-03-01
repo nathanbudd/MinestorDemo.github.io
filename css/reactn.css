@@ -30,8 +30,7 @@
 }
 .reactn-feature-icon img
 {
-    width: 40px;
-    height: 40px;
+    width: 50px;
 }
 .text-centre-icon
 {
@@ -83,4 +82,8 @@
 .navbar-brand
 {
     padding-top: 20px;
+}
+p
+{
+    font-size: 1.2em;
 }
