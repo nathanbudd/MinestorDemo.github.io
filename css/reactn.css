@@ -25,13 +25,13 @@
     vertical-align: middle;
 
 }
-.reactn-experience-icon
-{
-    width: 170px;
-}
 .reactn-experience-icon img
 {
-    width: 130px;
+    width: 100px;
+}
+.reactn-experience-icon.manage
+{
+    padding-left: 0px;
 }
 .v-middle
 {
@@ -93,6 +93,14 @@
 .feature-box h4
 {
     color: white;
+}
+.feature-box.top
+{
+    height: 672px;
+}
+.feature-box.bottom
+{
+    height: 510px;
 }
 .reactn-image
 {
